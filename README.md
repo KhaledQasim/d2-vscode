@@ -1,19 +1,19 @@
 <div align="center">
   <br />
   <div align="center">
-    <img src="https://raw.githubusercontent.com/terrastruct/d2-vscode/master/docs/assets/header.png" alt="D2" />
+    <img src="https://raw.githubusercontent.com/d2lang/d2-vscode/master/docs/assets/header.png" alt="D2" />
   </div>
   <br />
 </div>
 
-[![ci](https://github.com/terrastruct/d2-vscode/actions/workflows/ci.yml/badge.svg)](https://github.com/terrastruct/d2-vscode/actions/workflows/ci.yml)
-[![daily](https://github.com/terrastruct/d2-vscode/actions/workflows/daily.yml/badge.svg)](https://github.com/terrastruct/d2-vscode/actions/workflows/daily.yml)
-[![license](https://img.shields.io/github/license/terrastruct/d2-vscode?color=9cf)](./LICENSE)
+[![ci](https://github.com/d2lang/d2-vscode/actions/workflows/ci.yml/badge.svg)](https://github.com/d2lang/d2-vscode/actions/workflows/ci.yml)
+[![daily](https://github.com/d2lang/d2-vscode/actions/workflows/daily.yml/badge.svg)](https://github.com/d2lang/d2-vscode/actions/workflows/daily.yml)
+[![license](https://img.shields.io/github/license/d2lang/d2-vscode?color=9cf)](./LICENSE.txt)
 
 # VSCode extension for [D2](https://d2lang.com) files.
 
 _Note: Requires D2 to be installed on your machine. See
-[https://github.com/terrastruct/d2/tree/master#install](https://github.com/terrastruct/d2/tree/master#install)
+[https://github.com/d2lang/d2/tree/master#install](https://github.com/d2lang/d2/tree/master#install)
 for instructions._
 
 ## Currently Supports

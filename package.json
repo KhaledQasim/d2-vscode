@@ -349,11 +349,11 @@
   "homepage": "https://d2lang.com",
   "icon": "d2-icon.png",
   "bugs": {
-    "url": "https://github.com/terrastruct/d2-vscode/issues",
+    "url": "https://github.com/d2lang/d2-vscode/issues",
     "email": "info@terrastruct.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/terrastruct/d2-vscode"
+    "url": "https://github.com/d2lang/d2-vscode"
   }
 }
