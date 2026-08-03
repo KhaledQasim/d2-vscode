@@ -65,7 +65,7 @@ osascript -e 'quit app "Visual Studio Code"'; yarn dev && code ~/d2-testing
 
 ### CI
 
-CI relies on Terrastruct's shared [CI submodule](https://github.com/terrastruct/ci).
+CI relies on D2's shared [CI submodule](https://github.com/d2lang/ci).
 
 To run all CI: `./make.sh`.
 
