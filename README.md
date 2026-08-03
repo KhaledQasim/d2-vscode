@@ -37,7 +37,7 @@ y: |`md
 ## Example
 
 <div align="center">
-  <img src="https://terrastruct-site-assets.s3.us-west-1.amazonaws.com/gifs/d2_vscode.gif" alt="D2" />
+  <img src="./docs/assets/d2_vscode.gif" alt="D2" />
 </div>
 
 ## Install
