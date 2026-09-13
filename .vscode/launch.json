@@ -9,6 +9,7 @@
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ],
+      "preLaunchTask": "watch",
       "request": "launch",
       "type": "extensionHost"
     }
