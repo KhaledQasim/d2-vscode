@@ -192,7 +192,7 @@
           "enumDescriptions": [
             "The directed graph layout library Dagre",
             "Eclipse Layout Kernel (ELK) with the Layered algorithm",
-            "Terrastruct's AutoLayout Approach - available if installed"
+            "Terrastruct's AutoLayout Approach"
           ],
           "description": "Layout used for preview."
         },
@@ -320,6 +320,7 @@
     "@types/markdown-it-container": "^2.0.10",
     "@types/mocha": "^10.0.0",
     "@types/node": "^20.17.6",
+    "@types/semver": "^7.8.0",
     "@types/vscode": "^1.73.0",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
@@ -344,7 +345,8 @@
   "dependencies": {
     "async-mutex": "^0.5.0",
     "child_process": "^1.0.2",
-    "markdown-it-container": "^4.0.0"
+    "markdown-it-container": "^4.0.0",
+    "semver": "^7.8.5"
   },
   "homepage": "https://d2lang.com",
   "icon": "d2-icon.png",

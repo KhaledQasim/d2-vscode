@@ -122,6 +122,31 @@ class Utility {
       util.showErrorToolsNotFound("");
     }
   }
+
+  /**
+   * getD2Version - attempts to get the D2 version by running the executable
+   *   and parsing its output. Returns null if unable to determine.
+   */
+  getD2Version(): string | null {
+    const d2Path: string = ws.get("execPath", "d2");
+    try {
+      const result = spawnSync(d2Path, ["--version"], { encoding: "utf-8" });
+      if (result.error || result.status !== 0) {
+        return null;
+      }
+
+      const stdout = result.stdout.trim();
+      // Expecting output like 'v0.6.0' or just '0.6.0'
+      const match = stdout.match(/(?:v)?(\d+\.\d+\.\d+)/i);
+      if (match && match[1]) {
+        return match[1];
+      }
+    } catch {
+      // Ignored
+    }
+
+    return null;
+  }
 }
 
 export class VT {

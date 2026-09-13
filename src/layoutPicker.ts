@@ -1,5 +1,6 @@
 import { QuickPickItem, window } from "vscode";
 import { util } from "./utility";
+import * as semver from "semver";
 
 /**
  * Container for D2 Layouts
@@ -33,13 +34,22 @@ const talaPluginName: string =
  */
 export class layoutPicker {
   constructor() {
-    // If the plugin file exists, add the option if it hasn't been added before
-    if (util.isFileOnPath(talaPluginName)) {
+    let includeTala = false;
+
+    // First, check if D2 version >= 0.6.0 (TALA is built-in)
+    const version = util.getD2Version();
+    if (version && semver.gte(version, "0.6.0")) {
+      includeTala = true;
+    } else if (util.isFileOnPath(talaPluginName)) {
+      // For older versions, check if the plugin file exists on the path
+      includeTala = true;
+    }
+
+    if (includeTala) {
       if (layouts.indexOf(layoutTala) === -1) {
         layouts.push(layoutTala);
       }
     } else {
-      // If the plugin file does *not* exist, remove the option if it exists in the array
       const idx = layouts.indexOf(layoutTala);
       if (idx !== -1) {
         layouts.splice(idx, 1);
